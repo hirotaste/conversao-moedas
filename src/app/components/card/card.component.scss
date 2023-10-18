@@ -1,0 +1,113 @@
+.card {
+  width: 430px;
+  height: 428px;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--card-background);
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header, .card-body, .card-footer {
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header {
+  height: 119px;
+  color: var(--text-basic);
+  background-color: var(--card-header-background);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.card-body {
+  height: 198px;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 96px;
+}
+
+.card-footer {
+  height: 110px;
+  display: flex;
+  border-top: 0.5px solid var(--border-color);
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-right {
+  border-left: 0.5px solid var(--border-color);
+}
+
+.footer-title {
+  color: var(--text-secondary);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: center;
+}
+
+.footer-text {
+  color: var(--text-basic);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+}
+
+.card-error, .card-loading {
+  width: 100%;
+  height: calc(100% - 119px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-error-title {
+  height: 60px;
+  margin-bottom: 10px;
+  color: var(--text-basic);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 39px;
+}
+
+.card-error-button, .card-loading .loading-svg {
+  margin-top: 10px;
+}
+
+.reload-button {
+  width: 173px;
+  height: 58px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: center;
+  color: var(--text-basic);
+  background-color: var(--button-background);
+}
+
+.reload-button:hover {
+  background-color: var(--app-background);
+}
+
+.loading-svg {
+  width: 100px;
+  height: 100px;
+}

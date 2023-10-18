@@ -1,0 +1,41 @@
+<div class="card">
+  <div class="card-header">
+    {{ title }}
+  </div>
+
+  <ng-container *ngIf="isLoading; else contentTemplate">
+    <div class="card-loading">
+      <img  class="loading-svg" src="../../../assets/svgs/loader.svg" alt="Carregando...">
+    </div>
+  </ng-container>
+</div>
+
+<ng-template #contentTemplate>
+  <ng-container *ngIf="!hasError; else errorTemplate">
+    <div class="card-body" [ngStyle]="getVariationColorStyle(conversionValue)">
+      {{ conversionValue | currency:'BRL':'symbol':'1.2-2' }}
+    </div>
+
+    <div class="card-footer">
+      <div class="footer-left">
+        <div class="footer-title">Variação (%)</div>
+        <div class="footer-text">{{ variation }}</div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-title">Atualizado</div>
+        <div class="footer-text">{{ lastUpdated }}</div>
+      </div>
+    </div>
+  </ng-container>
+</ng-template>
+
+<ng-template #errorTemplate>
+  <div class="card-error">
+    <div class="card-error-content">
+      <div class="card-error-title">Algo deu errado</div>
+      <div class="card-error-button">
+        <button class="reload-button" (click)="reloadCurrency()">RECARREGAR</button>
+      </div>
+    </div>
+  </div>
+</ng-template>
