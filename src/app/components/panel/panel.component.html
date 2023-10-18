@@ -1,0 +1,14 @@
+<div class="main-panel">
+  <div class="panel-content">
+    <ng-container *ngFor="let currency of currencies">
+      <app-card
+        [title]="currency.name.split('/')[0]"
+        [conversionValue]="currency.ask"
+        [variation]="currency.pctChange"
+        [lastUpdated]="currency.create_date.split(' ')[1]"
+        [isLoading]="isLoading"
+        [hasError]="hasError"
+      ></app-card>
+    </ng-container>
+  </div>
+</div>

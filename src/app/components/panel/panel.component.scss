@@ -1,0 +1,36 @@
+.main-panel {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background-color: var(--app-background);
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 94px;
+}
+
+@media (max-width: 1550px) {
+  .main-panel {
+    align-items: start;
+  }
+
+  .panel-content {
+    padding: 38px 0;
+    gap: 38px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-panel {
+    width: 500px;
+    padding: 0 10px;
+    justify-content: start;
+  }
+}
