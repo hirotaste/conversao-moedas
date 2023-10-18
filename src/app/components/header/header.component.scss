@@ -1,0 +1,18 @@
+header {
+  height: 100px;
+  width: 100vw;
+  min-width: 100vw;
+  position: sticky;
+  top: 0;
+  background-color: var(--app-header-background);
+  // z-index: 1000;
+}
+
+.logo-container {
+  width: 265px;
+  position: fixed;
+  top: 47px;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
