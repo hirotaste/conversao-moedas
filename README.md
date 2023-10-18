@@ -19,14 +19,14 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
    git clone https://github.com/hirotaste/conversao-moedas
 
 2. Navegue até o diretório do projeto:
-
-  ```bash
-  cd conversao-moedas
-
+   
+   ```bash
+   cd conversao-moedas
+  
 3. Instalando e Executando o projeto
 
-  ```bash
-  npm run dev
+   ```bash
+   npm run dev
 
 - OBS: O comando acima só funciona se estiver na pasta do projeto (conversao-moedas)
 
