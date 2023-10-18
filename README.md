@@ -20,11 +20,13 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 
 2. Navegue até o diretório do projeto:
 
-   cd conversao-moedas
+  ```bash
+  cd conversao-moedas
 
 3. Instalando e Executando o projeto
 
-   npm run dev
+  ```bash
+  npm run dev
 
 - OBS: O comando acima só funciona se estiver na pasta do projeto (conversao-moedas)
 
